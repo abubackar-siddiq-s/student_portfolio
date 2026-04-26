@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Student Portfolio - Abubackar Siddiq
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional information as a Computer Science student at Kongu Engineering College.
@@ -177,7 +176,7 @@ Potential improvements for future versions:
 
 *Computer Science & Design Student at Kongu Engineering College*
 
-=======
+**Live Portfolio**: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com) 
 # Student Portfolio - Abubackar Siddiq
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional information as a Computer Science student at Kongu Engineering College.
@@ -356,5 +355,4 @@ Potential improvements for future versions:
 
 *Computer Science & Design Student at Kongu Engineering College*
 
->>>>>>> 99ac541 (Updated Code)
 **Live Portfolio**: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com) 
