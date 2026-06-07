@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 ## 🌐 Live Demo
 
-**View the live portfolio:** [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com)
+**View the live portfolio:** [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com) **(or)** [https://abubackar.netlify.app](https://abubackar.netlify.app)
 
 ## 🌟 Features
 
