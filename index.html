@@ -56,6 +56,24 @@
         cursor: none;
       }
 
+      /* Hide custom cursor by default */
+      .cursor,
+      .cursor-ring {
+        display: none;
+      }
+
+      /* Show ONLY on desktop with real mouse */
+      @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
+        body {
+          cursor: none;
+        }
+
+        .cursor,
+        .cursor-ring {
+          display: block;
+        }
+      }
+
       /* === CUSTOM CURSOR === */
       .cursor {
         position: fixed;
@@ -236,8 +254,8 @@
         margin: 0 auto;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 420px;
-        gap: 80px;
+        grid-template-columns: 1fr min(420px, 40%);
+        gap: clamp(32px, 5vw, 80px);
         align-items: center;
       }
 
@@ -312,6 +330,11 @@
 
       .hero-role span {
         color: var(--accent);
+      }
+
+      .hero-left {
+        min-width: 0;
+        overflow: hidden;
       }
 
       .hero-desc {
@@ -779,6 +802,8 @@
         color: var(--muted);
         text-decoration: none;
         transition: all 0.2s;
+        position: relative;
+        z-index: 2;
       }
 
       .project-link-arrow:hover {
@@ -1232,12 +1257,24 @@
 
         .hero-inner {
           grid-template-columns: 1fr;
-          gap: 60px;
+          gap: 48px;
         }
 
         .hero-photo-wrap {
-          max-width: 340px;
+          max-width: 380px;
           margin: 0 auto;
+        }
+
+        .photo-badge.top-left {
+          left: -10px;
+        }
+
+        .photo-badge.bottom-right {
+          right: -10px;
+        }
+
+        .hero-desc {
+          max-width: 100%;
         }
 
         .section {
@@ -1266,23 +1303,64 @@
 
       @media (max-width: 768px) {
         nav {
-          padding: 16px 20px;
+          padding: 14px 20px;
         }
 
         .nav-links {
           display: none;
         }
 
+        .nav-logo {
+          font-size: 1rem;
+        }
+
         .hero {
-          padding: 100px 20px 60px;
+          padding: 90px 20px 50px;
+        }
+
+        .hero-name {
+          font-size: clamp(2.4rem, 10vw, 3rem);
+          letter-spacing: -0.5px;
+          word-break: break-word;
+        }
+
+        .hero-role {
+          font-size: 0.75rem;
+          white-space: normal;
+          word-break: break-word;
+          line-height: 1.6;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          width: 100%;
+          justify-content: center;
         }
 
         .hero-stats {
-          gap: 24px;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .stat-num {
+          font-size: 1.6rem;
+        }
+
+        .photo-badge {
+          display: none;
         }
 
         .project-grid {
           grid-template-columns: 1fr;
+        }
+
+        .project-item {
+          padding: 28px 24px;
         }
 
         .cert-list {
@@ -1299,6 +1377,22 @@
           padding: 60px 20px;
         }
 
+        .contact-email {
+          font-size: 0.82rem;
+          padding: 14px 20px;
+          word-break: break-all;
+        }
+
+        .contact-socials {
+          gap: 12px;
+        }
+
+        .contact-info-row {
+          gap: 16px;
+          flex-direction: column;
+          align-items: center;
+        }
+
         footer {
           padding: 20px;
           flex-direction: column;
@@ -1309,9 +1403,89 @@
         .contact-section {
           padding: 60px 20px 100px;
         }
+      }
 
-        .photo-badge {
-          display: none;
+      @media (max-width: 480px) {
+        .hero-tag {
+          font-size: 0.68rem;
+          padding: 5px 11px;
+        }
+
+        .hero-name {
+          font-size: clamp(2rem, 9.5vw, 2.5rem);
+          letter-spacing: 0;
+        }
+
+        .hero-role {
+          font-size: 0.7rem;
+          white-space: normal;
+          word-break: break-word;
+        }
+
+        .hero-desc {
+          font-size: 0.95rem;
+        }
+
+        .hero-stats {
+          gap: 16px;
+        }
+
+        .stat-num {
+          font-size: 1.4rem;
+        }
+
+        .stat-label {
+          font-size: 0.7rem;
+        }
+
+        .section-heading {
+          font-size: 1.7rem;
+          letter-spacing: -0.5px;
+          margin-bottom: 36px;
+        }
+
+        .chip {
+          font-size: 0.7rem;
+          padding: 6px 11px;
+        }
+
+        .project-item {
+          padding: 24px 18px;
+        }
+
+        .project-name {
+          font-size: 1.15rem;
+        }
+
+        .cert-item {
+          padding: 16px 18px;
+        }
+
+        .cert-name {
+          font-size: 0.82rem;
+        }
+
+        .contact-big {
+          font-size: 2.2rem;
+          letter-spacing: -1px;
+        }
+
+        .contact-sub {
+          font-size: 0.9rem;
+        }
+
+        .social-link {
+          width: 42px;
+          height: 42px;
+          font-size: 1rem;
+        }
+
+        .edu-card {
+          padding: 18px 20px;
+        }
+
+        .edu-degree {
+          font-size: 0.9rem;
         }
       }
 
@@ -1686,7 +1860,7 @@
             </div>
             <a
               class="project-link-arrow"
-              href="http://konguhostel.infinityfreeapp.com/"
+              href="https://konguhostel.infinityfreeapp.com/"
               target="_blank"
               >View Project</a
             >
@@ -1726,7 +1900,7 @@
             </div>
             <a
               class="project-link-arrow"
-              href="http://abubackar.infinityfreeapp.com"
+              href="https://abubackar.infinityfreeapp.com"
               target="_blank"
               >View Project</a
             >
@@ -1746,7 +1920,7 @@
             </div>
             <a
               class="project-link-arrow"
-              href="http://gamestation.infinityfreeapp.com/"
+              href="https://gamestation.infinityfreeapp.com/"
               target="_blank"
               >View Project</a
             >
@@ -2193,6 +2367,24 @@
     </footer>
 
     <script>
+      // === CUSTOM CURSOR (DESKTOP ONLY) ===
+      const isDesktop = window.matchMedia(
+        "(hover: hover) and (pointer: fine) and (min-width: 1024px)",
+      ).matches;
+
+      if (isDesktop) {
+        const cursor = document.getElementById("cursor");
+        const cursorRing = document.getElementById("cursorRing");
+
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+
+          cursorRing.style.left = e.clientX + "px";
+          cursorRing.style.top = e.clientY + "px";
+        });
+      }
+
       // === SHOW MORE (OR) SHOW LESS ===
       const CERTS_VISIBLE = 9; // show first 9 (3 rows), change to 6 for 2 rows
 
@@ -2221,6 +2413,7 @@
           document.querySelectorAll(".cert-item").forEach((item) => {
             item.classList.remove("cert-hidden");
             item.classList.add("cert-visible");
+            item.classList.add("visible");
           });
           btn.classList.add("expanded");
           btn.childNodes[0].textContent = "Show Less ";
@@ -2327,6 +2520,14 @@
             e.preventDefault();
             target.scrollIntoView({ behavior: "smooth", block: "start" });
           }
+        });
+      });
+
+      // === PROJECT CARD CLICK ===
+      document.querySelectorAll(".project-item").forEach((card) => {
+        card.addEventListener("click", () => {
+          const link = card.querySelector(".project-link-arrow");
+          if (link) window.open(link.href, "_blank");
         });
       });
 
