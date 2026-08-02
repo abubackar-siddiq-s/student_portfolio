@@ -1,2 +1,4 @@
-node_modules/
-.vite/
+node_modules
+dist
+.DS_Store
+*.local
