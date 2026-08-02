@@ -55,7 +55,7 @@ Student Portfolio/
 3. The portfolio will load immediately - no build process required!
 
 ### Live Demo
-Experience the portfolio in action: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com)
+Experience the portfolio in action: [https://abubackar.vercel.app](https://abubackar.vercel.app)
 
 ### Customization
 To customize this portfolio for your own use:
@@ -176,14 +176,14 @@ Potential improvements for future versions:
 
 *Computer Science & Design Student at Kongu Engineering College*
 
-**Live Portfolio**: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com) 
+**Live Portfolio**: [https://abubackar.vercel.app](https://abubackar.vercel.app) 
 # Student Portfolio - Abubackar Siddiq
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional information as a Computer Science student at Kongu Engineering College.
 
 ## 🌐 Live Demo
 
-**View the live portfolio:** [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com)
+**View the live portfolio:** [https://abubackar.vercel.app](https://abubackar.vercel.app)
 
 ## 🌟 Features
 
@@ -234,7 +234,7 @@ Student Portfolio/
 3. The portfolio will load immediately - no build process required!
 
 ### Live Demo
-Experience the portfolio in action: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com)
+Experience the portfolio in action: [https://abubackar.vercel.app](https://abubackar.vercel.app)
 
 ### Customization
 To customize this portfolio for your own use:
@@ -355,4 +355,4 @@ Potential improvements for future versions:
 
 *Computer Science & Design Student at Kongu Engineering College*
 
-**Live Portfolio**: [https://abubackar.infinityfreeapp.com](https://abubackar.infinityfreeapp.com) 
+**Live Portfolio**: [https://abubackar.vercel.app](https://abubackar.vercel.app) 
